@@ -1,5 +1,7 @@
 package com.codedifferently.drillz;
 
+import java.util.ArrayList;
+
 public class Problem01 {
 
     /**
@@ -16,6 +18,15 @@ public class Problem01 {
      * @return
      */
     public boolean lastDigit(int a, int b) {
-        return false;
+
+        String holder1 = String.valueOf(a);
+        String holder2 = String.valueOf(b);
+
+        int int1 = holder1.charAt(holder1.length()-1);
+        int int2 = holder2.charAt(holder2.length()-1);
+
+        return int1%int2 == 0;
+
+
     }
 }
