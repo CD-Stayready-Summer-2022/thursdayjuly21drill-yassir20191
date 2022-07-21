@@ -12,7 +12,7 @@ public class Problem02 {
      * @return
      */
     public boolean icyHot(int temp1, int temp2) {
-        return false;
+       if(temp1 < 0 )
     }
 
 }
